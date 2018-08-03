@@ -1,0 +1,31 @@
+<div  class="container">
+  <div class="row" >
+    
+    <div class="col-sm-4" *ngFor="let people of myPeople">
+                
+        <div class="card" [class.bg-primary]="people.selected" style="width: 200px; margin-bottom: 20px" >
+            
+          <img class="card-img-top" [src]="people.image">
+          <div class="card-body">
+            <h5 class="card-title">{{people.name | uppercase}} </h5>
+            <p class="card-text">{{people.surname}}</p>
+      
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                    <button type="button" (click)="addFriend(people)" class="btn btn-info"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <button type="button"  class="btn btn-info"><i class="far fa-envelope"></i></button>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>

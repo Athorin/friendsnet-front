@@ -1,0 +1,16 @@
+<div class="card text-left" style="width: 18rem;" >
+  <img class="card-img-top" src="./assets/image/avatar.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{person.name}} {{person.surname}}</h5>
+  </div>
+  <ul class="list-group list-group-flush ">
+    <li class="list-group-item">Groups</li>
+      <ul *ngFor>
+        <li></li>
+      </ul>
+    <li class="list-group-item">Events <span class="badge badge-light text-right">{{getFriends(person)}}</span></li>
+    <li class="list-group-item">Posts <span class="badge badge-light text-right">{{getFriends(person)}}</span></li>
+    <li class="list-group-item">Friends <span class="badge badge-light text-right">{{getFriends(person)}}</span></li>
+  </ul>
+
+</div>

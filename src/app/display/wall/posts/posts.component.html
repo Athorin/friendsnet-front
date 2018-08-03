@@ -1,0 +1,28 @@
+<div class="input-group" style="margin-bottom: 20px">
+  <div class="input-group-prepend">
+    <span class="input-group-text">¿Que te cuentas?</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea" [(ngModel)]="postText">{{postText}}</textarea>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" (click)="createPost(postText)"><i class="fas fa-share-square"></i></button>
+  </div>
+</div>
+
+<div *ngFor="let post of myPosts.slice().reverse()">
+<div class="card" style="margin-bottom: 20px" >
+    <div class="card-header text-left">
+        Someone famous in <cite title="Source Title">Source Title</cite> 
+        <button class="btn btn-outline-secondary float-right" type="button" (click)="deletePost(post)"><i class="fas fa-trash-alt"></i>
+          </button>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0 text-justify">
+        <p> {{post.text}}</p>
+        <footer class="blockquote-footer text-right">
+          
+          {{post.creationDate}}
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>

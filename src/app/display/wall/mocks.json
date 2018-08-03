@@ -1,0 +1,173 @@
+{
+  "group-list": [
+    {
+      "id": 1,
+      "name": "Group1",
+      "description": "These Group is the best one",
+      "image": "./assets/image/group.jpg",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "name": "Group2",
+      "description": "These Group is the second one",
+      "image": "./assets/image/group.jpg",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "Group3",
+      "description": "These Group is the second one",
+      "image": "./assets/image/group.jpg",
+      "selected": true
+    },
+    {
+      "id": 4,
+      "name": "Group4",
+      "description": "These Group is the second one",
+      "image": "./assets/image/group.jpg",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "name": "Group5",
+      "description": "These Group is the second one",
+      "image": "./assets/image/group.jpg",
+      "selected": false
+    }
+  ],
+  "people-list": [
+    {
+      "id": 1,
+      "name": "Person1",
+      "surname": "These Person is the best one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false,
+      "friends": [
+        {
+          "id": 2,
+          "name": "Person2",
+          "surname": "These Person is the second one",
+          "image": "./assets/image/avatar.jpg",
+          "selected": false,
+          "friends": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Person2",
+      "surname": "These Person is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false,
+      "friends": []
+    },
+    {
+      "id": 3,
+      "name": "Person3",
+      "surname": "These Person is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": true,
+      "friends": []
+    },
+    {
+      "id": 4,
+      "name": "Person4",
+      "surname": "These Person is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false,
+      "friends": []
+    },
+    {
+      "id": 5,
+      "name": "Person5",
+      "surname": "These Person is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false,
+      "friends": []
+    }
+  ],
+  "event-list": [
+    {
+      "id": 1,
+      "name": "Event1",
+      "description": "These Event is the best one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "name": "Event2",
+      "description": "These Event is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "Event3",
+      "description": "These Event is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": true
+    },
+    {
+      "id": 4,
+      "name": "Event4",
+      "description": "These Event is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "name": "Event5",
+      "description": "These Event is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false
+    }
+  ],
+  "post-list": [
+    {
+      "id": 1,
+      "text": "These Event is the best one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "text": "These Event is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "text": "These Event is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": true
+    },
+    {
+      "id": 4,
+      "text": "These Event is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "text": "These Event is the second one",
+      "image": "./assets/image/avatar.jpg",
+      "selected": false
+    },
+    {
+      "id": 7,
+      "text": "hola",
+      "selected": false,
+      "image": "",
+      "creationDate": "11/11/1111"
+    },
+    {
+      "id": 9,
+      "text": "Hola de nuevo",
+      "selected": false,
+      "image": "",
+      "creationDate": "3/8/2018 16:24:59"
+    }
+  ]
+}
