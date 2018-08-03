@@ -44,7 +44,6 @@ export class PostsComponent implements OnInit {
 
   createPost() {
     const p = new Posts();
-    p.id = this.myPosts.length + 1;
     p.text = this.postText;
     p.selected = false;
     p.image = '';
