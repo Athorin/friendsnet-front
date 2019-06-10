@@ -1,46 +1,37 @@
-<div  class="container">
-  <div class="row" >
-    
+<div class="container">
+  <div class="row">
     <div class="col-sm-12" *ngFor="let group of myGroup">
-                
-        <div class="card w-100" style="margin-bottom: 20px; height: 200px; overflow: hidden;" >
-            
-          <img class="card-img" [src]="group.image" style="margin-top: -25%">
-          
-          <div class="card-img-overlay">
-
-            <div class="container">
-              <div class="row" style="margin-bottom: 10px">
-                <div class="col-sm-4">
-                  
-                  <div class="card" style="width: 100%;">
-                    <div class="card-body">
-                      <h6 class="card-title">{{group.name | uppercase}}</h6>
-                    </div>
+      <div class="card w-100" style="margin-bottom: 20px; height: 200px; overflow: hidden;">
+        <img class="card-img" [src]="group.image" style="margin-top: -25%">
+        <div class="card-img-overlay">
+          <div class="container">
+            <div class="row" style="margin-bottom: 10px">
+              <div class="col-sm-4">
+                <div class="card" style="width: 100%;">
+                  <div class="card-body">
+                    <h6 class="card-title">{{group.name | uppercase}}</h6>
                   </div>
-
                 </div>
-                <div class="col-sm-6"></div>
-
-                <div class="col-sm-2"><button type="button" href="#" class="btn btn-info"><i class="fas fa-sign-in-alt"></i></button></div>
-
               </div>
-              
-              <div class="row">
-                  <div class="col-sm-12">
-                  <div class="card" style="width: 100%;">
-                    <div class="card-body">
-                      <p class="card-text">{{group.description}}</p>
-                    </div>
-                  </div>
-                  </div>
+              <div class="col-sm-6"></div>
+              <div class="col-sm-2">
+                <button type="button" href="#" class="btn btn-info">
+                  <i class="fas fa-sign-in-alt"></i>
+                </button>
               </div>
-
             </div>
-
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card" style="width: 100%;">
+                  <div class="card-body">
+                    <p class="card-text">{{group.description}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      
+      </div>
     </div>
   </div>
 </div>
