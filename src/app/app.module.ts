@@ -22,6 +22,7 @@ import { GroupService } from './display/wall/group/group.service';
 import { PeopleListService } from './display/wall/people/people.service';
 import { EventService } from './display/wall/event/event.service';
 import { PostsService } from './display/wall/posts/posts.service';
+import { RightNavComponent } from './right-nav/right-nav.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/post', pathMatch: 'full' },
@@ -34,25 +35,33 @@ const routes: Routes = [
   ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeNavComponent,
-    PeopleComponent,
-    LeftNavComponent,
-    ProfileComponent,
-    DisplayComponent,
-    WallComponent,
-    PostsComponent,
-    GroupComponent,
-    EventComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule.forRoot(routes)
-  ],
-  providers: [PeopleListService, GroupService, EventService, PostsService],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      HomeNavComponent,
+      PeopleComponent,
+      LeftNavComponent,
+      ProfileComponent,
+      DisplayComponent,
+      WallComponent,
+      PostsComponent,
+      GroupComponent,
+      EventComponent,
+      RightNavComponent
+   ],
+   imports: [
+      BrowserModule,
+      FormsModule,
+      HttpClientModule,
+      RouterModule.forRoot(routes)
+   ],
+   providers: [
+      PeopleListService,
+      GroupService,
+      EventService,
+      PostsService
+   ],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }
