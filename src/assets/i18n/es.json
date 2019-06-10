@@ -1,0 +1,16 @@
+{
+    "LOGOUT": {
+      "Logout_Exito": "Se ha deslogueado con éxito",
+      "Reconectar": "Volver a loguearse"
+    },
+    "Http_Errors": {
+      "404": "404 - Página no encontrada"
+    },
+    "HEADER": {
+      "LABELS": {
+        "Seleccionar_Cartera": "Seleccionar cartera",
+        "Log_Out": "Log Out",
+        "Unlogged_User": "Unlogged User"
+      }
+    }
+}
